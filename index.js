@@ -52,21 +52,26 @@ const dogPictures = [
   }
 ];
 
-// populating gallery with pictures
-const gallerySection = document.querySelector("#gallery");
-dogPictures.forEach(pic => {
-  let img = document.createElement("img");
-  img.src = pic.url;
-  img.alt = pic.title;
-  gallerySection.appendChild(img);
-});
 
-// handle form submission
-document.querySelector("form").addEventListener("submit", event => {
-  event.preventDefault();
-  Array.from(event.target.elements).forEach(el => {
-    console.log("Input Type: ", el.type);
-    console.log("Name: ", el.name);
-    console.log("Value: ", el.value);
+
+// function to Add Pictures to Gallery
+function addPicturesToGallery(pictures, gallery) {
+  pictures.forEach(pic => {
+    let img = document.createElement("img");
+    img.src = pic.url;
+    img.alt = pic.title;
+    gallery.appendChild(img);
   });
-});
+}
+
+// function to Print Form on Submit
+export default function printFormOnSubmit(form) {
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    Array.from(event.target.elements).forEach(el => {
+      console.log("Input Type: ", el.type);
+      console.log("Name: ", el.name);
+      console.log("Value: ", el.value);
+    });
+  });
+}
