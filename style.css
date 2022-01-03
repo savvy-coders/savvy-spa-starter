@@ -1,7 +1,5 @@
 #jumbotron {
-  background: url(https://images.unsplash.com/photo-1528334713982-2d1fe11a157a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
-    center center no-repeat;
-  background-size: cover;
+  background: url(assets/img/photo-1528334713982-2d1fe11a157a.jpg) center center no-repeat;  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,7 +63,27 @@ footer {
   margin: auto;
 }
 
-@media (max-width: 549px) {
+#pizzas {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  height: auto;
+  width: 92.5%;
+  margin: auto;
+}
+
+#pizzas tbody {
+  width: 100%;
+}
+
+#pizzas th {
+  text-align: left;
+}
+
+#pizzas td,th {
+  width: 25%;
+}
+
+@media (max-width: 549px){
   .hidden--mobile {
     display: none !important;
   }
@@ -108,10 +126,6 @@ footer {
 }
 
 @media (min-width: 550px) {
-  #jumbotron {
-    height: 60vh;
-  }
-
   nav > ul {
     display: flex;
     justify-content: space-evenly;

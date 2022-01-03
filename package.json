@@ -2,7 +2,6 @@
   "name": "savvy-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "parcel-build": "parcel build index.html && cp _redirects ./dist/",
     "serve": "parcel index.html"
@@ -18,7 +17,7 @@
   },
   "dependencies": {
     "html-literal": "^1.1.0",
-    "parcel-bundler": "^1.12.5",
+    "parcel": "^2.0.1",
     "yargs-parser": ">=13.1.2"
   }
 }
