@@ -13,11 +13,11 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "parcel": "^2.0.1"
   },
   "dependencies": {
     "html-literal": "^1.1.0",
-    "parcel": "^2.0.1",
     "yargs-parser": ">=13.1.2"
   }
 }
