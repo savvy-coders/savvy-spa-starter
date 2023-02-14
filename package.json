@@ -1,6 +1,6 @@
 {
   "name": "savvy-spa-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "parcel-build": "parcel build index.html && cp _redirects ./dist/",
@@ -14,7 +14,7 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "1.19.1",
-    "parcel": "^2.0.1",
+    "parcel": "^2.8.0",
     "yargs-parser": ">=13.1.2"
   },
   "dependencies": {}
