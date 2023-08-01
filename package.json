@@ -2,6 +2,7 @@
   "name": "savvy-spa-starter",
   "version": "1.0.1",
   "description": "",
+  "type": "module",
   "scripts": {},
   "keywords": [],
   "author": "",
