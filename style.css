@@ -1,5 +1,5 @@
 #jumbotron {
-  background: url(assets/img/photo-1528334713982-2d1fe11a157a.jpg) center center no-repeat;  background-size: cover;
+  background: url(assets/img/wavey-grid.jpg) center center no-repeat;  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,6 +65,16 @@ footer {
 
 #pizzas td,th {
   width: 25%;
+}
+
+#oops404 img {
+  max-width: 40%;
+  margin-left: 30%;
+}
+
+#oops404 .attribution {
+  font-size: 0.7em;
+  text-align: center;
 }
 
 @media (max-width: 549px){
