@@ -67,6 +67,14 @@ footer {
   width: 25%;
 }
 
+#order {
+  & #toppings-wrapper {
+    & label {
+      margin-right: 1em;
+    }
+  }
+}
+
 #oops404 img {
   max-width: 40%;
   margin-left: 30%;

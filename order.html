@@ -24,12 +24,21 @@
     </ul>
   </nav>
   <section id="order">
-    <form id="order" method="POST" action="">
+    <form id="order" method="POST" action="http://localhost:4040/pizzas/form">
       <h2>Order a pizza</h2>
+      <div>
+        <label for="customer">Customer</label>
+        <input
+          type="text"
+          name="customer"
+          id="customer"
+          placeholder="Enter Customer Name"
+        />
+      </div>
       <div>
         <label for="crust">Crust:</label>
         <select id="crust" name="crust">
-          <option value="">Select a Crust</option>
+          <option value="" hidden>Select a Crust</option>
           <option value="thin">Thin</option>
           <option value="chicago">Chicago</option>
           <option value="deep-dish">Deep Dish</option>
@@ -43,6 +52,7 @@
           name="cheese"
           id="cheese"
           placeholder="Enter Cheese"
+          default="Mozzarella"
           required
         />
       </div>
@@ -56,55 +66,51 @@
           required
         />
       </div>
-      <div>
-        <label for="toppings">Toppings:</label>
+      <div id="toppings-wrapper">
+        <b>Toppings:</b>
         <input
           type="checkbox"
-          id="id_of_checkbox1"
-          class="items1"
+          id="chicken-toppings-checkbox"
           name="toppings"
           value="Chicken"
         />
-        <label for="top1">chicken</label>
+        <label for="chicken-toppings-checkbox">Chicken</label>
         <input
           type="checkbox"
-          id="id_of_checkbox2"
-          class="items1"
+          id="pepperoni-toppings-checkbox"
+          name="toppings"
+          value="pepperoni"
+        />
+        <label for="pepperoni-toppings-checkbox">Pepperoni</label>
+        <input
+          type="checkbox"
+          id="ham-toppings-checkbox"
+          name="toppings"
+          value="ham"
+        />
+        <label for="ham-toppings-checkbox">Ham</label>
+        <input
+          type="checkbox"
+          id="onion-toppings-checkbox"
           name="toppings"
           value="onion"
         />
-        <label for="top2">onion</label>
+        <label for="onion-toppings-checkbox">Onion</label>
         <input
           type="checkbox"
-          id="id_of_checkbox3"
-          class="items1"
+          id="mushroom-toppings-checkbox"
           name="toppings"
-          value="spinach"
+          value="mushroom"
         />
-        <label for="top3">spinach</label>
+        <label for="mushroom-toppings-checkbox">Mushroom</label>
         <input
           type="checkbox"
-          id="id_of_checkbox4"
-          class="items1"
+          id="cheese-toppings-checkbox"
           name="toppings"
-          value="Extra cheese"
+          value="extra cheese"
         />
-        <label for="top4">extra cheese</label>
-        <input
-          type="checkbox"
-          id="id_of_checkbox5"
-          class="items1"
-          name="toppings"
-          value="red pepper"
-        />
-        <label for="top5">red pepper</label>
+        <label for="cheese-toppings-checkbox">Extra Cheese</label>
       </div>
-      <input
-        type="hidden"
-        name="customer"
-        id="customer"
-        value="Anonymous Customer"
-      />
       <input type="submit" name="submit" value="Submit Pizza" />
     </form>
   </section>
